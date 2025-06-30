@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to Saheb Zada's World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    .profile-img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 4px solid #000;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #222;
+    }
+    h2 {
+      font-size: 20px;
+      color: #555;
+    }
+    .button-area {
+      margin-top: 30px;
+    }
+    button {
+      padding: 12px 28px;
+      font-size: 18px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    .gmail-list {
+      display: none;
+      margin-top: 25px;
+    }
+    .gmail-list a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="profile.jpg" alt="Saheb Zada" class="profile-img" />
+    <h1>Welcome to the world of SAHEB ZADA</h1>
+    <h2>SAHEB ZADA ANAYATULLAH</h2>
+
+    <div class="button-area">
+      <button onclick="unlockGmails()">IT King</button>
+      <div class="gmail-list" id="gmailList">
+        <a href="https://mail.google.com/mail/u/0/" target="_blank">sahebzada183@gmail.com</a>
+        <a href="https://mail.google.com/mail/u/1/" target="_blank">personal.saheb@gmail.com</a>
+        <a href="https://mail.google.com/mail/u/2/" target="_blank">admin.sahebzada@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function unlockGmails() {
+      const code = prompt("Enter access code:");
+      if (code === "1234") {
+        document.getElementById("gmailList").style.display = "block";
+      } else {
+        alert("Incorrect code.");
+      }
+    }
+  </script>
+</body>
+</html>
