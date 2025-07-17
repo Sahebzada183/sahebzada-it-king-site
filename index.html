@@ -1,89 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Welcome to Saheb Zada's World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahebzada Anayatullah - The IT King</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1549921296-3a88f6e44f30?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
-    .container {
-      padding: 40px 20px;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
     }
     .profile-img {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      border: 4px solid #000;
-      object-fit: cover;
-      margin-bottom: 20px;
+      width: 350px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+      margin-bottom: 1rem;
     }
     h1 {
-      font-size: 28px;
-      color: #222;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
     }
-    h2 {
-      font-size: 20px;
-      color: #555;
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .button-area {
-      margin-top: 30px;
-    }
-    button {
-      padding: 12px 28px;
-      font-size: 18px;
-      background-color: #000;
-      color: #fff;
+    .button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: gold;
+      color: black;
+      font-weight: bold;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
+      transition: 0.3s ease;
     }
-    button:hover {
-      background-color: #333;
+    .button:hover {
+      background-color: #ffd700;
     }
-    .gmail-list {
-      display: none;
-      margin-top: 25px;
-    }
-    .gmail-list a {
-      display: block;
-      margin: 10px 0;
-      font-size: 18px;
-      color: #0073e6;
-      text-decoration: none;
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .profile-img { width: 90%; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="profile.jpg" alt="Saheb Zada" class="profile-img" />
-    <h1>Welcome to the world of SAHEB ZADA</h1>
-    <h2>SAHEB ZADA ANAYATULLAH</h2>
-
-    <div class="button-area">
-      <button onclick="unlockGmails()">IT King</button>
-      <div class="gmail-list" id="gmailList">
-        <a href="https://mail.google.com/mail/u/0/" target="_blank">sahebzada183@gmail.com</a>
-        <a href="https://mail.google.com/mail/u/1/" target="_blank">personal.saheb@gmail.com</a>
-        <a href="https://mail.google.com/mail/u/2/" target="_blank">admin.sahebzada@gmail.com</a>
-      </div>
-    </div>
+  <div class="overlay">
+    <img src="https://raw.githubusercontent.com/Sahebzada183/IT-King/main/ceo-chair.png" alt="CEO Image" class="profile-img"/>
+    <h1>SAHEBZADA ANAYATULLAH</h1>
+    <p>Welcome to the Official Website of Sahebzada Anayatullah – A visionary leader, entrepreneur, and the IT King of innovation. Leading with passion and power.</p>
+    <a href="mailto:contact@itking.com"><button class="button">Contact Me</button></a>
   </div>
-
-  <script>
-    function unlockGmails() {
-      const code = prompt("Enter access code:");
-      if (code === "1234") {
-        document.getElementById("gmailList").style.display = "block";
-      } else {
-        alert("Incorrect code.");
-      }
-    }
-  </script>
 </body>
-</html>,
+</html>
