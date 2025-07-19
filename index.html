@@ -2,34 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAHEB ZADA</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
+      margin: 0;
     }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      text-align: center;
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
     }
-    img {
-      width: 250px;
-      border-radius: 10px;
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .tool-button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    .tool-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>My Profile Image</h2>
-    <img src="https://sahebzada183.github.io/sahebzada-web-final/assets/profile.jpg" alt="Profile Image" />
-  </div>
+
+  <h1>SAHEB ZADA</h1>
+
+  <img
+    class="profile-img"
+    src="https://raw.githubusercontent.com/Sahebzada183/sahebzada-web-final/main/assets/WhatsApp%20Image%202025-02-22%20at%201.23.56%20PM%20(2).jpeg"
+    alt="Profile Image"
+  />
+
+  <a class="tool-button" href="https://sahebzada183.github.io/sahebzada-web-final/" target="_blank">
+    Open AI Image Generator Tool
+  </a>
+
 </body>
 </html>
